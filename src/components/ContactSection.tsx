@@ -1,3 +1,5 @@
+import { MapPin, Phone, Mail, Globe } from "lucide-react";
+
 const ContactSection = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-[hsl(var(--islamic-cream))] to-white">
@@ -20,7 +22,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-[hsl(var(--primary))] rounded-lg flex items-center justify-center text-white">
-                    📍
+                    <MapPin className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-medium arabic-heading mb-1">العنوان</h4>
@@ -34,7 +36,7 @@ const ContactSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-[hsl(var(--primary))] rounded-lg flex items-center justify-center text-white">
-                    📞
+                    <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-medium arabic-heading mb-1">أرقام الهاتف</h4>
@@ -47,47 +49,30 @@ const ContactSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-[hsl(var(--primary))] rounded-lg flex items-center justify-center text-white">
-                    ✉️
+                    <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-medium arabic-heading mb-1">البريد الإلكتروني</h4>
                     <p className="arabic-text text-muted-foreground">
-                      info@hiss.edu.ly
+                      info@fssi.edu.ly
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-[hsl(var(--primary))] rounded-lg flex items-center justify-center text-white">
-                    🌐
+                    <Globe className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="font-medium arabic-heading mb-1">الموقع الإلكتروني</h4>
                     <p className="arabic-text text-muted-foreground">
-                      www.hiss.edu.ly
+                      www.fssi.edu.ly
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="islamic-card p-6">
-              <h3 className="text-xl font-bold arabic-heading mb-4">ساعات العمل</h3>
-              <div className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <span className="arabic-text">الأحد - الخميس</span>
-                  <span className="text-muted-foreground">8:00 ص - 3:00 م</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="arabic-text">الجمعة</span>
-                  <span className="text-muted-foreground">مغلق</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="arabic-text">السبت</span>
-                  <span className="text-muted-foreground">مغلق</span>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Map and Quick Contact */}

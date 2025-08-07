@@ -17,14 +17,14 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 32 18% 20%;
 
-    /* Islamic academic color scheme - warm earth tones */
-    --primary: 25 45% 35%;         /* Rich brown */
+    /* Islamic academic color scheme - updated with new primary */
+    --primary: 30 58% 42%;         /* #A3652A */
     --primary-foreground: 0 0% 100%;
     
     --secondary: 35 25% 88%;       /* Light beige */
     --secondary-foreground: 32 18% 20%;
     
-    --accent: 25 60% 45%;          /* Warm brown accent */
+    --accent: 30 48% 52%;          /* Lighter accent */
     --accent-foreground: 0 0% 100%;
     
     --muted: 35 15% 95%;           /* Very light beige */
@@ -40,16 +40,16 @@ All colors MUST be HSL.
     /* Custom Islamic academic tokens */
     --islamic-gold: 45 85% 55%;    /* Gold accent */
     --islamic-cream: 35 30% 96%;   /* Cream background */
-    --islamic-brown-light: 25 35% 65%;
-    --islamic-brown-dark: 25 55% 25%;
+    --islamic-brown-light: 30 38% 65%;
+    --islamic-brown-dark: 30 68% 25%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(25 45% 35%) 0%, hsl(25 35% 45%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(30 58% 42%) 0%, hsl(30 48% 52%) 100%);
     --gradient-section: linear-gradient(180deg, hsl(35 30% 96%) 0%, hsl(0 0% 100%) 100%);
     
     /* Shadows */
-    --shadow-card: 0 4px 20px hsl(25 45% 35% / 0.1);
-    --shadow-hero: 0 10px 40px hsl(25 45% 35% / 0.2);
+    --shadow-card: 0 4px 20px hsl(30 58% 42% / 0.1);
+    --shadow-hero: 0 10px 40px hsl(30 58% 42% / 0.2);
 
     --radius: 0.5rem;
 
@@ -116,7 +116,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Noto Sans Arabic', 'Arial', sans-serif;
+    font-family: 'Cairo', 'Noto Sans Arabic', 'Arial', sans-serif;
     direction: rtl;
   }
 }
@@ -162,7 +162,7 @@ All colors MUST be HSL.
   
   /* Arabic Typography */
   .arabic-heading {
-    @apply font-bold text-[hsl(var(--primary))] leading-relaxed;
+    @apply font-bold text-[hsl(var(--foreground))] leading-relaxed;
   }
   
   .arabic-text {

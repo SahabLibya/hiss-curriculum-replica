@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-scholar.jpg";
+import heroImage from "@/assets/college-group.jpg";
 
 const HeroSection = () => {
   return (
@@ -8,28 +8,28 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="عالم إسلامي متميز"
+          alt="أعضاء هيئة التدريس بكلية الإفتاء والعلوم الشرعية"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
       </div>
 
       {/* Content */}
       <div className="relative container mx-auto px-4 z-10">
         <div className="max-w-3xl text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            مسارك العلمي في العلوم الشرعية
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
+            كلية الإفتاء والعلوم الشرعية
           </h1>
-          <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
-            مع فضيلة الشيخ د. محمد أبو مدينة
+          <p className="text-xl md:text-2xl mb-8 leading-relaxed text-white/95">
+            دولة ليبيا - دار الإفتاء الليبية
           </p>
           <div className="mb-8">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[hsl(var(--islamic-gold))]">
-              برنامج الإسلام والحياة
+              التعليم الشرعي الأكاديمي المتميز
             </h2>
-            <p className="text-lg leading-relaxed opacity-90 max-w-2xl">
-              هذا تفصيل عن خارطة طريق لكل من يرغب في الانضمام إليها وخوض رحلة علمية متكاملة على مدار خمس سنوات، 
-              وصولاً إلى درجة التأهيل في العلوم الشرعية والإفتاء.
+            <p className="text-lg leading-relaxed text-white/90 max-w-2xl">
+              برنامج أكاديمي متكامل لإعداد علماء مؤهلين في العلوم الشرعية والإفتاء على مدار خمس سنوات، 
+              يهدف إلى تخريج علماء متمكنين قادرين على خدمة الدين والأمة.
             </p>
           </div>
           
@@ -37,7 +37,7 @@ const HeroSection = () => {
             <Button size="lg" className="btn-islamic-primary text-lg px-8">
               ابدأ رحلتك العلمية
             </Button>
-            <Button size="lg" variant="outline" className="btn-islamic-secondary text-lg px-8 border-white/30 text-white hover:bg-white/20">
+            <Button size="lg" variant="outline" className="text-lg px-8 border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300">
               استعرض المناهج
             </Button>
           </div>

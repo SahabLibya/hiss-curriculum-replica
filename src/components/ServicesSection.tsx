@@ -1,39 +1,41 @@
+import { FileText, Library, Microscope, Scale, Target, BookOpen } from "lucide-react";
+
 const ServicesSection = () => {
   const services = [
     {
       title: "القبول والتسجيل",
       description: "خدمات القبول والتسجيل للطلاب الجدد والحاليين",
-      icon: "📝",
+      icon: FileText,
       link: "#registration"
     },
     {
       title: "المكتبة الإلكترونية",
       description: "وصول مجاني للمراجع والكتب الإسلامية",
-      icon: "📚",
+      icon: Library,
       link: "#library"
     },
     {
       title: "البحوث العلمية",
       description: "دعم الطلاب في إعداد البحوث والرسائل",
-      icon: "🔬",
+      icon: Microscope,
       link: "#research"
     },
     {
       title: "الفتاوى والاستشارات",
       description: "تقديم الفتاوى والاستشارات الشرعية",
-      icon: "⚖️",
+      icon: Scale,
       link: "#fatwa"
     },
     {
       title: "التدريب والتطوير",
       description: "برامج تدريبية لتطوير المهارات العلمية",
-      icon: "🎯",
+      icon: Target,
       link: "#training"
     },
     {
       title: "النشر والتوثيق",
       description: "نشر الأبحاث والكتب العلمية المحكمة",
-      icon: "📖",
+      icon: BookOpen,
       link: "#publishing"
     }
   ];
@@ -51,30 +53,33 @@ const ServicesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="islamic-card p-6 group cursor-pointer">
-              <div className="text-center">
-                <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {service.icon}
+          {services.map((service, index) => {
+            const IconComponent = service.icon;
+            return (
+              <div key={index} className="islamic-card p-6 group cursor-pointer">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <IconComponent className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold arabic-heading mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="arabic-text leading-relaxed mb-4 text-muted-foreground">
+                    {service.description}
+                  </p>
+                  <a
+                    href={service.link}
+                    className="inline-flex items-center text-[hsl(var(--primary))] hover:text-[hsl(var(--accent))] font-medium transition-colors"
+                  >
+                    اعرف المزيد
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </a>
                 </div>
-                <h3 className="text-xl font-bold arabic-heading mb-3">
-                  {service.title}
-                </h3>
-                <p className="arabic-text leading-relaxed mb-4">
-                  {service.description}
-                </p>
-                <a
-                  href={service.link}
-                  className="inline-flex items-center text-[hsl(var(--primary))] hover:text-[hsl(var(--accent))] font-medium transition-colors"
-                >
-                  اعرف المزيد
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </a>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

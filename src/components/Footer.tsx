@@ -1,3 +1,5 @@
+import { MapPin, Phone, Mail, Globe } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="bg-[hsl(var(--primary))] text-white">
@@ -47,21 +49,21 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">تواصل معنا</h4>
             <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-2">
-                <span>📍</span>
-                <span className="opacity-80">تاجوراء - بجوار مدرسة الإمام مالك</span>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 mt-0.5 text-[hsl(var(--islamic-gold))]" />
+                <span className="text-white/80">تاجوراء - بجوار مدرسة الإمام مالك شمال غرب جسر الشاحنات</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span>📞</span>
-                <span className="opacity-80">0213337100</span>
+              <div className="flex items-center gap-3">
+                <Phone className="w-4 h-4 text-[hsl(var(--islamic-gold))]" />
+                <span className="text-white/80">0213337100 - 0217200666</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span>✉️</span>
-                <span className="opacity-80">info@hiss.edu.ly</span>
+              <div className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-[hsl(var(--islamic-gold))]" />
+                <span className="text-white/80">info@fssi.edu.ly</span>
               </div>
-              <div className="flex items-center gap-2">
-                <span>🌐</span>
-                <span className="opacity-80">www.hiss.edu.ly</span>
+              <div className="flex items-center gap-3">
+                <Globe className="w-4 h-4 text-[hsl(var(--islamic-gold))]" />
+                <span className="text-white/80">www.fssi.edu.ly</span>
               </div>
             </div>
           </div>

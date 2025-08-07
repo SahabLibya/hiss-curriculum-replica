@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 
+const smoothScroll = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+};
+
 const Header = () => {
   return (
     <header className="bg-white shadow-sm border-b border-border sticky top-0 z-50">
@@ -18,24 +22,24 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#home" className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+            <button onClick={() => smoothScroll('hero')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               الرئيسية
-            </a>
-            <a href="#about" className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+            </button>
+            <button onClick={() => smoothScroll('stats')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               عن الكلية
-            </a>
-            <a href="#curriculum" className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+            </button>
+            <button onClick={() => smoothScroll('curriculum')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               المناهج الدراسية
-            </a>
-            <a href="#services" className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+            </button>
+            <button onClick={() => smoothScroll('services')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               الخدمات
-            </a>
-            <a href="#news" className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+            </button>
+            <button onClick={() => smoothScroll('news')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               الأخبار
-            </a>
-            <a href="#contact" className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+            </button>
+            <button onClick={() => smoothScroll('contact')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               اتصل بنا
-            </a>
+            </button>
           </nav>
 
           {/* CTA Button */}

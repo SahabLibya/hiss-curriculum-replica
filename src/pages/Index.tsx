@@ -12,12 +12,24 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        <HeroSection />
-        <StatsSection />
-        <ServicesSection />
-        <CurriculumSection />
-        <NewsSection />
-        <ContactSection />
+        <section id="hero">
+          <HeroSection />
+        </section>
+        <section id="stats">
+          <StatsSection />
+        </section>
+        <section id="services">
+          <ServicesSection />
+        </section>
+        <section id="curriculum">
+          <CurriculumSection />
+        </section>
+        <section id="news">
+          <NewsSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
       </main>
       <Footer />
     </div>
