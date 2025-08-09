@@ -7,28 +7,28 @@ const InstitutionalAreasSection = () => {
       value: "15,250",
       unit: "متر مربع",
       icon: Building2,
-      color: "from-blue-500 to-blue-600"
+      color: "bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))]"
     },
     {
       title: "المبنى الإداري",
       value: "1,115", 
       unit: "متر مربع",
       icon: Users,
-      color: "from-green-500 to-green-600"
+      color: "bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))]"
     },
     {
       title: "المبنى التعليمي",
       value: "6,200",
       unit: "متر مربع", 
       icon: School,
-      color: "from-purple-500 to-purple-600"
+      color: "bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))]"
     },
     {
       title: "المبنى الخدمي",
       value: "7,200",
       unit: "متر مربع",
       icon: Settings,
-      color: "from-orange-500 to-orange-600"
+      color: "bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))]"
     }
   ];
 

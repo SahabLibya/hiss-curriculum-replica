@@ -8,27 +8,27 @@ const StatsSection = () => {
       icon: BookOpen
     },
     {
-      number: "75+",
+      number: "68+",
       label: "مقرر دراسي",
       icon: Book
     },
     {
-      number: "15+",
-      label: "مجال علمي",
+      number: "154+",
+      label: "عدد الطلاب",
       icon: GraduationCap
     },
     {
-      number: "500+",
+      number: "46+",
       label: "طالب متخرج",
       icon: Users
     },
     {
-      number: "25+",
+      number: "50+",
       label: "عضو هيئة تدريس",
       icon: UserCheck
     },
     {
-      number: "1000+",
+      number: "4673+",
       label: "ساعة دراسية",
       icon: Clock
     }

@@ -41,11 +41,11 @@ const ValuesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap gap-8 justify-center">
           {values.map((value, index) => {
             const IconComponent = value.icon;
             return (
-              <div key={index} className="islamic-card p-8 group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+              <div key={index} className="islamic-card p-8 group hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex-1 min-w-[280px] max-w-[350px]">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <IconComponent className="w-10 h-10 text-white" />

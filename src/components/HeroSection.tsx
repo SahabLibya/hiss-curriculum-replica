@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/college-group.jpg";
-
+import heroImage from "@/assets/hero.jpg";
+const smoothScroll = (id: string) => {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+};
 const HeroSection = () => {
   return (
     <section className="relative min-h-[600px] flex items-center overflow-hidden">
@@ -34,10 +36,14 @@ const HeroSection = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="btn-islamic-primary text-lg px-8">
+            <Button size="lg" className="btn-islamic-primary text-lg px-8"
+              onClick={() => window.open('https://forms.gle/Qpe82SMSVr3gjgDc9', '_blank')}
+            >
               ابدأ رحلتك العلمية
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 border-white/30 text-white hover:bg-white/20 hover:border-white/50 transition-all duration-300">
+            <Button size="lg" variant="outline" className="text-lg px-8 border-white/30 text-black hover:bg-white/20 hover:border-white/50 transition-all duration-300"
+             onClick={() => smoothScroll('curriculum')}
+            >
               استعرض المناهج
             </Button>
           </div>
@@ -45,7 +51,7 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[hsl(var(--islamic-cream))] to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-[hsl(var(--islamic-cream))] to-transparent"></div>
     </section>
   );
 };
