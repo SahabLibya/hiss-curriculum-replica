@@ -5,32 +5,32 @@ const ValuesSection = () => {
     {
       title: "الالتزام بأحكام الشريعة الإسلامية",
       icon: Shield,
-      color: "from-emerald-500 to-emerald-600"
+      description: "نلتزم بتطبيق أحكام الشريعة الإسلامية في جميع جوانب العملية التعليمية والإدارية"
     },
     {
-      title: "النزاهة والشفافية",
+      title: "النزاهة والشفافية", 
       icon: Eye,
-      color: "from-blue-500 to-blue-600"
+      description: "نحرص على الوضوح والصدق في جميع معاملاتنا وقراراتنا الإدارية والأكاديمية"
     },
     {
       title: "الإتقان والإبداع",
       icon: Lightbulb,
-      color: "from-yellow-500 to-yellow-600"
+      description: "نسعى لتحقيق التميز والإبداع في الأداء والبحث العلمي والتدريس"
     },
     {
       title: "العمل بروح الفريق",
       icon: Users,
-      color: "from-purple-500 to-purple-600"
+      description: "نؤمن بأهمية التعاون والعمل الجماعي لتحقيق الأهداف المشتركة"
     },
     {
       title: "التفاعل الإيجابي مع المجتمع",
       icon: Heart,
-      color: "from-red-500 to-red-600"
+      description: "نحرص على خدمة المجتمع والمساهمة في حل مشكلاته وتلبية احتياجاته"
     }
   ];
 
   return (
-    <section id="values" className="py-16 bg-white">
+    <section id="values" className="py-16 section-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold arabic-heading mb-4">
@@ -45,14 +45,17 @@ const ValuesSection = () => {
           {values.map((value, index) => {
             const IconComponent = value.icon;
             return (
-              <div key={index} className="islamic-card p-6 group hover:shadow-lg transition-all duration-300">
+              <div key={index} className="islamic-card p-8 group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="text-center">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${value.color} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent className="w-8 h-8 text-white" />
+                  <div className="w-20 h-20 bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <IconComponent className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold arabic-heading leading-relaxed">
+                  <h3 className="text-xl font-bold arabic-heading mb-4 text-[hsl(var(--primary))]">
                     {value.title}
                   </h3>
+                  <p className="arabic-text text-muted-foreground leading-relaxed text-sm">
+                    {value.description}
+                  </p>
                 </div>
               </div>
             );
