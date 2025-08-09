@@ -36,7 +36,7 @@ const ServicesSection = () => {
       title: "النشر والتوثيق",
       description: "نشر الأبحاث والكتب العلمية المحكمة",
       icon: BookOpen,
-      link: "https://www.shabcenter.ly/"
+      link: "https://search.shabcenter.ly/"
     }
   ];
 

@@ -29,7 +29,7 @@ const Footer = () => {
               <li><a href="#curriculum" className="opacity-80 hover:opacity-100 transition-opacity">المناهج الدراسية</a></li>
               <li><a href="https://forms.gle/Qpe82SMSVr3gjgDc9" className="opacity-80 hover:opacity-100 transition-opacity">القبول والتسجيل</a></li>
               <li><a href="https://search.shabcenter.ly/" target="__blank" className="opacity-80 hover:opacity-100 transition-opacity">البحوث العلمية</a></li>
-              <li><a href="https://www.shabcenter.ly/" className="opacity-80 hover:opacity-100 transition-opacity">المكتبة</a></li>
+              <li><a href="https://www.shabcenter.ly/" target="__blank" className="opacity-80 hover:opacity-100 transition-opacity">المكتبة</a></li>
             </ul>
           </div>
 
@@ -37,11 +37,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">الخدمات الأكاديمية</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#fatwa" className="opacity-80 hover:opacity-100 transition-opacity">دار الإفتاء</a></li>
-              <li><a href="#consultation" className="opacity-80 hover:opacity-100 transition-opacity">الاستشارات الشرعية</a></li>
-              <li><a href="#training" className="opacity-80 hover:opacity-100 transition-opacity">التدريب والتطوير</a></li>
-              <li><a href="#publishing" className="opacity-80 hover:opacity-100 transition-opacity">النشر العلمي</a></li>
-              <li><a href="#conferences" className="opacity-80 hover:opacity-100 transition-opacity">المؤتمرات والندوات</a></li>
+              <li><a href="https://ifta.ly/" target="__blank" className="opacity-80 hover:opacity-100 transition-opacity">دار الإفتاء</a></li>
+              <li><a href="https://ifta.ly/" target="__blank" className="opacity-80 hover:opacity-100 transition-opacity">الاستشارات الشرعية</a></li>
+              <li><a href="https://mb.tanasuh.org/" target="__blank" className="opacity-80 hover:opacity-100 transition-opacity">التدريب والتطوير</a></li>
+              <li><a href="https://search.shabcenter.ly/" target="__blank" className="opacity-80 hover:opacity-100 transition-opacity">النشر العلمي</a></li>
             </ul>
           </div>
 
@@ -74,7 +73,7 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm opacity-80">
-              © 2024 كلية الإفتاء والعلوم الشرعية - جميع الحقوق محفوظة
+              © {new Date().getFullYear()} كلية الإفتاء والعلوم الشرعية - جميع الحقوق محفوظة
             </div>
             <div className="flex items-center gap-4 text-sm">
               <a href="#privacy" className="opacity-80 hover:opacity-100 transition-opacity">سياسة الخصوصية</a>
