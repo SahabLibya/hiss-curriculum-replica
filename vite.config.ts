@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Add this line to make all asset paths relative
-  base: './',
+  // Make sure base is a single slash
+  base: '/',
 
   server: {
     host: "::",
