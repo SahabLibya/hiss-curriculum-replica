@@ -41,8 +41,9 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium arabic-heading mb-1">أرقام الهاتف</h4>
                     <p className="arabic-text text-muted-foreground">
-                      0213337100<br />
-                      0217200666
+                      الشؤون العلمية: 00218914557837<br />
+                      الشؤون الإدارية: 00218917204225<br />
+                      0213337100 - 0217200666
                     </p>
                   </div>
                 </div>
@@ -82,7 +83,7 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold arabic-heading mb-4">موقعنا على الخريطة</h3>
               <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-4xl mb-2">🗺️</div>
+                  <MapPin className="w-12 h-12 text-[hsl(var(--primary))] mx-auto mb-2" />
                   <p className="text-muted-foreground">خريطة تفاعلية</p>
                   <p className="text-sm text-muted-foreground mt-1">تاجوراء، ليبيا</p>
                 </div>

@@ -25,11 +25,17 @@ const Header = () => {
             <button onClick={() => smoothScroll('hero')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               الرئيسية
             </button>
-            <button onClick={() => smoothScroll('stats')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+            <button onClick={() => smoothScroll('about')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               عن الكلية
             </button>
+            <button onClick={() => smoothScroll('values')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+              القيم
+            </button>
+            <button onClick={() => smoothScroll('vision-mission')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
+              الرؤية والرسالة
+            </button>
             <button onClick={() => smoothScroll('curriculum')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
-              المناهج الدراسية
+              المناهج
             </button>
             <button onClick={() => smoothScroll('services')} className="arabic-text hover:text-[hsl(var(--primary))] transition-colors font-medium">
               الخدمات
@@ -44,7 +50,10 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-islamic-primary">
+            <Button 
+              className="btn-islamic-primary"
+              onClick={() => window.open('https://forms.gle/Qpe82SMSVr3gjgDc9', '_blank')}
+            >
               التسجيل
             </Button>
           </div>

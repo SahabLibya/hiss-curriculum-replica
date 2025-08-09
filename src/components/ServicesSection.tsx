@@ -6,37 +6,37 @@ const ServicesSection = () => {
       title: "القبول والتسجيل",
       description: "خدمات القبول والتسجيل للطلاب الجدد والحاليين",
       icon: FileText,
-      link: "#registration"
+      link: "https://forms.gle/Qpe82SMSVr3gjgDc9"
     },
     {
       title: "المكتبة الإلكترونية",
       description: "وصول مجاني للمراجع والكتب الإسلامية",
       icon: Library,
-      link: "#library"
+      link: "https://www.shabcenter.ly/"
     },
     {
       title: "البحوث العلمية",
       description: "دعم الطلاب في إعداد البحوث والرسائل",
       icon: Microscope,
-      link: "#research"
+      link: "https://www.shabcenter.ly/"
     },
     {
       title: "الفتاوى والاستشارات",
       description: "تقديم الفتاوى والاستشارات الشرعية",
       icon: Scale,
-      link: "#fatwa"
+      link: "https://ifta.ly/"
     },
     {
       title: "التدريب والتطوير",
       description: "برامج تدريبية لتطوير المهارات العلمية",
       icon: Target,
-      link: "#training"
+      link: "https://mb.tanasuh.org/"
     },
     {
       title: "النشر والتوثيق",
       description: "نشر الأبحاث والكتب العلمية المحكمة",
       icon: BookOpen,
-      link: "#publishing"
+      link: "https://www.shabcenter.ly/"
     }
   ];
 
@@ -69,6 +69,8 @@ const ServicesSection = () => {
                   </p>
                   <a
                     href={service.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-[hsl(var(--primary))] hover:text-[hsl(var(--accent))] font-medium transition-colors"
                   >
                     اعرف المزيد
