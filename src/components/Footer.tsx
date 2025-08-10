@@ -78,12 +78,15 @@ const Footer = () => {
             <div className="text-sm opacity-80">
               © {new Date().getFullYear()} كلية العلوم الشرعية والإفتاء - جميع الحقوق محفوظة
             </div>
-            <div className="flex items-center gap-4 text-sm">
-              <a href="#privacy" className="opacity-80 hover:opacity-100 transition-opacity">سياسة الخصوصية</a>
+            <div className="flex flex-col md:flex-row items-center gap-4 text-sm">
+              <div className="flex items-center gap-3">
+                <a href="#privacy" className="opacity-80 hover:opacity-100 transition-opacity">سياسة الخصوصية</a>
               <a href="#terms" className="opacity-80 hover:opacity-100 transition-opacity">الشروط والأحكام</a>
               <a href="#sitemap" className="opacity-80 hover:opacity-100 transition-opacity">خريطة الموقع</a>
+              </div>
               {/* Added "Powered by" / "Designed and Developed by" section */}
-                <a
+        <div>
+                  <a
                   href="https://www.facebook.com/LySahab"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -91,7 +94,9 @@ const Footer = () => {
                   style={{ boxShadow: "0 2px 8px 0 rgba(212,175,55,0.15)" }}
                 >
                   تصميم وتطوير: سحاب ليبيا
+                     <span className="inline-block animate-pulse mr-1">✨</span>
                 </a>
+        </div>
             </div>
           </div>
         </div>
