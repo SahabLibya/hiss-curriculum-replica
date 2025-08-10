@@ -14,7 +14,7 @@ const Footer = () => {
                 <img src={logo} alt="Logo" className="max-h-full max-w-full object-contain" />
               </div>
               <div>
-                <h3 className="text-lg font-bold">كلية الإفتاء والعلوم الشرعية</h3>
+                <h3 className="text-lg font-bold">كلية العلوم الشرعية و الإفتاء</h3>
                 <p className="text-sm opacity-80">دولة ليبيا</p>
               </div>
             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm opacity-80">
-              © {new Date().getFullYear()} كلية الإفتاء والعلوم الشرعية - جميع الحقوق محفوظة
+              © {new Date().getFullYear()} كلية العلوم الشرعية و الإفتاء - جميع الحقوق محفوظة
             </div>
             <div className="flex items-center gap-4 text-sm">
               <a href="#privacy" className="opacity-80 hover:opacity-100 transition-opacity">سياسة الخصوصية</a>

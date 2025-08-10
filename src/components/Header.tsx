@@ -16,7 +16,7 @@ const Header = () => {
               <img src={logotext} alt="Logo" className="" />
             {/* </div> */}
             {/* <div>
-              <h1 className="text-xl font-bold arabic-heading">كلية الإفتاء والعلوم الشرعية</h1>
+              <h1 className="text-xl font-bold arabic-heading">كلية العلوم الشرعية و الإفتاء</h1>
               <p className="text-sm text-muted-foreground">دولة ليبيا</p>
             </div> */}
           </div>

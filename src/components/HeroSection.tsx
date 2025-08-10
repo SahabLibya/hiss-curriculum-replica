@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="أعضاء هيئة التدريس بكلية الإفتاء والعلوم الشرعية"
+          alt="أعضاء هيئة التدريس بكلية العلوم الشرعية و الإفتاء"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="relative container mx-auto px-4 z-10">
         <div className="max-w-3xl text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
-            كلية الإفتاء والعلوم الشرعية
+            كلية العلوم الشرعية و الإفتاء
           </h1>
           <p className="text-xl md:text-2xl mb-8 leading-relaxed text-white/95">
             دولة ليبيا - دار الإفتاء الليبية
