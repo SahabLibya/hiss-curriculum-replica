@@ -65,7 +65,7 @@ const ContactSection = () => {
               </p>
               <p className="flex items-center justify-center gap-2">
                 <Globe className="w-4 h-4" />
-                www.fssi.edu.ly
+                fssi.edu.ly
               </p>
             </div>
           </div>
