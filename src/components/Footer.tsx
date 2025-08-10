@@ -91,8 +91,6 @@ const Footer = () => {
                   style={{ boxShadow: "0 2px 8px 0 rgba(212,175,55,0.15)" }}
                 >
                   تصميم وتطوير: سحاب ليبيا
-                  <span className="inline-block animate-pulse mr-1">✨</span>
-                
                 </a>
             </div>
           </div>
