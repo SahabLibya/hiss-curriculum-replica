@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import logotext from "@/assets/logo-text.png";
 const smoothScroll = (id: string) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 };
@@ -13,7 +13,7 @@ const Header = () => {
           <div className="flex items-center gap-4">
             {/* <div className="w-12 h-12 bg-gradient-to-br from-[hsl(var(--primary))] to-[hsl(var(--accent))] rounded-lg flex items-center justify-center"> */}
               {/* <span className="text-white font-bold text-xl">ك</span> */}
-              <img src="src/assets/logo-text.png" alt="Logo" className="" />
+              <img src={logotext} alt="Logo" className="" />
             {/* </div> */}
             {/* <div>
               <h1 className="text-xl font-bold arabic-heading">كلية الإفتاء والعلوم الشرعية</h1>
@@ -50,7 +50,7 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="">
             <Button 
               className="btn-islamic-primary"
               onClick={() => window.open('https://forms.gle/Qpe82SMSVr3gjgDc9', '_blank')}
@@ -60,11 +60,11 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden">
+          {/* <button className="md:hidden">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
     </header>
