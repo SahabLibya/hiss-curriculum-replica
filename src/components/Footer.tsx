@@ -84,7 +84,7 @@ const Footer = () => {
               <a href="#sitemap" className="opacity-80 hover:opacity-100 transition-opacity">خريطة الموقع</a>
               {/* Added "Powered by" / "Designed and Developed by" section */}
                 <a
-                  href="https://www.shabcenter.ly/"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative px-3 py-1 rounded-md font-bold text-[hsl(var(--primary))] bg-white border border-[hsl(var(--islamic-gold))] shadow-md hover:bg-[hsl(var(--islamic-gold))] hover:text-white transition-all duration-200 whitespace-nowrap"
