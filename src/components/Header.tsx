@@ -55,7 +55,7 @@ const Header = () => {
                 window.open("https://emis.hiss.edu.ly/login", "_blank")
               }
             >
-              بوابة الطالبة
+              بوابة الطلبة
             </Button>
           </div>
 
@@ -126,7 +126,7 @@ const Header = () => {
               variant="outline"
               onClick={() => window.open("https://emis.hiss.edu.ly/login", "_blank")}
             >
-              بوابة الطالبة
+              بوابة الطلبة
             </Button>
           </div>
         </nav>
