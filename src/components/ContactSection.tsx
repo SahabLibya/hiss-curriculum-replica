@@ -61,7 +61,7 @@ const ContactSection = () => {
             <div className="arabic-text text-muted-foreground space-y-2">
               <p className="flex items-center justify-center gap-2">
                 <Mail className="w-4 h-4" />
-                info@fssi.edu.ly
+                info@hiss.edu.ly
               </p>
               <p className="flex items-center justify-center gap-2">
                 <Globe className="w-4 h-4" />

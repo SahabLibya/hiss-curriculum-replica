@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[hsl(var(--islamic-gold))]" />
-                <span className="text-white/80">info@fssi.edu.ly</span>
+                <span className="text-white/80">info@hiss.edu.ly</span>
               </div>
               <div className="flex items-center gap-3">
                 <Globe className="w-5 h-5 text-[hsl(var(--islamic-gold))]" />
