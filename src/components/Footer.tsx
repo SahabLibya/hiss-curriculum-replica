@@ -2,34 +2,8 @@ import { MapPin, Mail, Globe } from "lucide-react";
 import { Facebook } from "lucide-react"; // add Facebook icon import
 import logo from "@/assets/logo.png";
 
-const Footer = () => {
-  return (
-    <footer className="bg-[hsl(var(--primary))] text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-center sm:text-start">
-          {/* College Info */}
-          <div className="sm:col-span-2 flex flex-col items-center sm:items-start text-center sm:text-start">
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
-              <div className=" md:w-24 w-64 rounded-lg flex items-center justify-center">
-                <img
-                  src={logo}
-                  alt="Logo"
-                  className="max-h-full max-w-full object-contain"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">كلية العلوم الشرعية والإفتاء</h3>
-                <p className="text-sm opacity-80">دولة ليبيا</p>
-              </div>
-            </div>
-            <p className="text-sm opacity-90 leading-relaxed max-w-md">
-              مؤسسة أكاديمية متخصصة في تدريس العلوم الشرعية والإفتاء، تهدف إلى إعداد علماء مؤهلين في خدمة الدين والأمة
-            </p>
-          </div>
-
-          {/* Quick Links + Academic Services grouped */}
-          <div className="sm:col-span-1 flex justify-center gap-12">
-            <div>
+const QuickLinks = ({ className = "" }) => {
+  return ( <div className={className}>
               <h4 className="text-lg font-bold mb-4">روابط سريعة</h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -80,8 +54,12 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+  )
+}
 
-            <div>
+const AcademicServices = ({ className = "" }) => {
+  return (
+    <div className={className}>
               <h4 className="text-lg font-bold mb-4">الخدمات الأكاديمية</h4>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -126,14 +104,48 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+  )
+}
+const Footer = () => {
+  return (
+    <footer className="bg-[hsl(var(--primary))] text-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 text-center sm:text-start">
+          {/* College Info */}
+          <div className="sm:col-span-2 flex flex-col items-center sm:items-start text-center sm:text-start">
+            <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
+              <div className=" md:w-24 w-64 rounded-lg flex items-center justify-center">
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold">كلية العلوم الشرعية والإفتاء</h3>
+                <p className="text-sm opacity-80">دولة ليبيا</p>
+              </div>
+            </div>
+            <p className="text-sm opacity-90 leading-relaxed max-w-md">
+              مؤسسة أكاديمية متخصصة في تدريس العلوم الشرعية والإفتاء، تهدف إلى إعداد علماء مؤهلين في خدمة الدين والأمة
+            </p>
           </div>
+
+          {/* Quick Links + Academic Services grouped */}
+          <div className="sm:col-span-1 flex justify-center gap-12 md:hidden">
+            <QuickLinks />
+            <AcademicServices />
+          </div>
+
+          <QuickLinks className="hidden md:block" />
+          <AcademicServices className="hidden md:block" />
 
           {/* Contact */}
           <div>
             <h4 className="text-lg font-bold mb-4">تواصل معنا</h4>
             <div className="space-y-4 text-sm flex flex-col items-center sm:items-start">
               <div className="flex items-start gap-3 max-w-xs mx-auto sm:mx-0">
-                <MapPin className="w-5 h-5 mt-0.5 text-[hsl(var(--islamic-gold))]" />
+                <MapPin className="w-9 h-9 mt-0.5 text-[hsl(var(--islamic-gold))]" />
                 <span className="text-white/80 leading-relaxed">
                   تاجوراء - بجوار مدرسة الإمام مالك شمال غرب جسر الشاحنات
                 </span>
@@ -151,7 +163,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[hsl(var(--islamic-gold))]" />
-                <span className="text-white/80">info@hiss.edu.ly</span>
+                <span className="text-white/80">info@fssi.edu.ly</span>
               </div>
               <div className="flex items-center gap-3">
                 <Globe className="w-5 h-5 text-[hsl(var(--islamic-gold))]" />
